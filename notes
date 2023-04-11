@@ -1,0 +1,14 @@
+run the db.sh file,
+
+you only need to do this once:
+chmod +x db.sh
+
+to create the db:
+
+./db.sh create
+
+(replace create with destroy,view,etc)
+
+./db.sh view will open the database and you can enter any sql commands to view or change the data
+
+company_to_movie table: every movie has multiple companies, and companies have multiple movies. for every company movie relationship there is one entry in the table.
