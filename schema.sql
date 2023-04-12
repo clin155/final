@@ -15,17 +15,14 @@ CREATE TABLE genres(
     name VARCHAR(40),
     PRIMARY KEY (id)
 );
-CREATE TABLE companies(
-    id INTEGER,
-    name VARCHAR(40),
-    country VARCHAR(40),
-    PRIMARY KEY (id)
-);
 
-CREATE TABLE company_to_movie(
-    company_id INTEGER,
-    movie_id INTEGER,
-    PRIMARY KEY (company_id, movie_id)
-    FOREIGN KEY (movie_id) REFERENCES movies(id)
-    FOREIGN KEY (company_id) REFERENCES companies(id)
+CREATE TABLE pokemon(
+    id INTEGER PRIMARY KEY,
+    name VARCHAR(40),
+    height INTEGER,
+    weight INTEGER,
+    type VARCHAR(20),
+    attack INTEGER,
+    defense INTEGER,
+    speed INTEGER
 );

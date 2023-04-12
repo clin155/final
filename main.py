@@ -1,11 +1,11 @@
 import json
-import data
+import movie
 import config
 
 
 def main():
     conn = config.getdb()
     cur = conn.cursor()
-    data.moviedata(cur)
+    movie.moviedata(cur)
 
     config.closedb(conn)
