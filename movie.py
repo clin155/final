@@ -7,6 +7,7 @@ MOVIEKEY = "0d615c57fb35d0bf9fbfdddd23fd2b92"
 
 def moviedata(cur, page):
     
+    #20 results per page (pages start at 1)
     # companies_dict = defaultdict(lambda: {})
     url = "https://api.themoviedb.org/3/movie/popular?"
     url += urllib.parse.urlencode({
