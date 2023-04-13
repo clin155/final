@@ -26,3 +26,8 @@ CREATE TABLE pokemon(
     defense INTEGER,
     speed INTEGER
 );
+
+CREATE TABLE books(
+    id INTEGER PRIMARY KEY,
+    title VARCHAR(40)
+);
