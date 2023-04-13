@@ -9,7 +9,6 @@ def main():
 
     for i in range(1, 6):
         movie.moviedata(cur, i)
-    movie.get_genres
 
     j = 1
     for i in range(4):
