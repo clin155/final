@@ -26,3 +26,12 @@ CREATE TABLE pokemon(
     defense INTEGER,
     speed INTEGER
 );
+
+CREATE TABLE dogs(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name VARCHAR(40),
+    energy INTEGER,
+    barking INTEGER,
+    weight REAL,
+    height REAL
+);

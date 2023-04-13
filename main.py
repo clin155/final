@@ -2,6 +2,7 @@ import json
 import movie
 import config
 import pokemon
+import dog
 
 def main():
     conn = config.getdb()
@@ -9,13 +10,14 @@ def main():
 
     for i in range(1, 6):
         movie.moviedata(cur, i)
-    movie.get_genres
 
     j = 1
     for i in range(4):
         pokemon.getpokemon(cur, j, j+25)
         j += 25
     movie.get_genres(cur)
+    for i in range(5):
+        dog.get_dogs(cur, 20*i)
     config.closedb(conn)
 
 
