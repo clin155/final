@@ -67,10 +67,3 @@ def get_genres(cur):
         print("Request failed")
         return
 
-
-if __name__ == "__main__":
-    conn = getdb()
-    cur = conn.cursor()
-    get_genres(cur)
-    closedb(conn)
-

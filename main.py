@@ -8,8 +8,9 @@ def main():
     cur = conn.cursor()
 
     for i in range(1, 6):
-        movie.moviedata(cur, i)
-    
+        movie.moviedata(cur, 1)
+    movie.get_genres
+
     j = 1
     for i in range(4):
         pokemon.getpokemon(cur, j, j+25)
