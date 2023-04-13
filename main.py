@@ -8,7 +8,7 @@ def main():
     cur = conn.cursor()
 
     for i in range(1, 6):
-        movie.moviedata(cur, 1)
+        movie.moviedata(cur, i)
     movie.get_genres
 
     j = 1
