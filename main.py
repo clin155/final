@@ -3,7 +3,6 @@ import movie
 import config
 import pokemon
 
-
 def main():
     conn = config.getdb()
     cur = conn.cursor()
