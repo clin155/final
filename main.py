@@ -12,12 +12,12 @@ def main():
     movie.get_genres
 
     j = 1
-
-    for i in range (4):
+    for i in range(4):
         pokemon.getpokemon(cur, j, j+25)
         j += 25
-    pokemon.getpokemon
+    movie.get_genres(cur)
     config.closedb(conn)
+
 
 if __name__ == "__main__":
     main()
