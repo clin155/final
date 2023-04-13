@@ -12,7 +12,11 @@ def main():
     
     j = 1
     for i in range(4):
-        pokemon.pokemondata(cur, j, j+25)
+        pokemon.getpokemon(cur, j, j+25)
         j += 25
     movie.get_genres(cur)
     config.closedb(conn)
+
+
+if __name__ == "__main__":
+    main()
