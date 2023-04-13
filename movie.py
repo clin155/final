@@ -72,5 +72,6 @@ if __name__ == "__main__":
     conn = getdb()
     cur = conn.cursor()
     get_genres(cur)
+    moviedata(cur)
     closedb(conn)
 
