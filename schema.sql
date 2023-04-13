@@ -27,7 +27,11 @@ CREATE TABLE pokemon(
     speed INTEGER
 );
 
-CREATE TABLE books(
-    id INTEGER PRIMARY KEY,
-    title VARCHAR(40)
+CREATE TABLE dogs(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name VARCHAR(40),
+    energy INTEGER,
+    barking INTEGER,
+    weight REAL,
+    height REAL
 );
