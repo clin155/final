@@ -12,5 +12,3 @@ def closedb(conn):
     if conn is not None:
         conn.commit()
         conn.close()
-
-
