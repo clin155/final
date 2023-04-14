@@ -14,7 +14,7 @@ def avg_rating_by_genre():
     ''')
     results = cur.fetchall()
 
-    with open("avg_rating_by_genre.txt", "w") as file:
+    with open("avg_genre_rating.txt", "w") as file:
         for genre, avg_rating in results:
             file.write(f"Average rating for {genre}: {avg_rating: .2}\n")
 
@@ -33,7 +33,7 @@ def avg_stats_by_type():
     ''')
     results = cur.fetchall()
 
-    with open("avg_stats_by_poketype.txt", "w") as file:
+    with open("poketype_avg_stats.txt", "w") as file:
         for _type, avg_attack, avg_defense, avg_speed in results:
             file.write(f"Average stats for {_type} Pokemon: Attack {avg_attack:.2f}, Defense {avg_defense:.2f}, Speed {avg_speed:.2f}\n")
 
@@ -52,7 +52,7 @@ def avg_bark_by_energy():
     ''')
     results = cur.fetchall()
 
-    with open ("avg_bark_by_energy.text", "w") as file:
+    with open ("avg_energy_bark.text", "w") as file:
         for energy, avg_barking in results:
             file.write(f"Average barking level for dogs with energy {energy}: {avg_barking:.2f}\n")
     
