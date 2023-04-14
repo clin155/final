@@ -33,7 +33,7 @@ def avg_stats_by_type():
     ''')
     results = cur.fetchall()
 
-    with open("poketype_avg_stats.txt", "w") as file:
+    with open("avg_poketype_stats.txt", "w") as file:
         for _type, avg_attack, avg_defense, avg_speed in results:
             file.write(f"Average stats for {_type} Pokemon: Attack {avg_attack:.2f}, Defense {avg_defense:.2f}, Speed {avg_speed:.2f}\n")
 
