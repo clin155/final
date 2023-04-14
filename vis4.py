@@ -1,7 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import config
-import sqlite3
 
 color_dict = {'Adventure': 'red', 'Fantasy': 'blue', 'Animation': 'green', 'Drama': 'orange', 'Horror': 'purple', 'Action': 'yellow', 'Comedy': 'pink', 'History': 'gray', 'Western': 'brown', 'Thriller': 'teal', 'Crime': 'olive', 'Documentary': 'gold', 'Science Fiction': 'magenta', 'Mystery': 'navy', 'Music': 'maroon', 'Romance': 'indigo', 'Family': 'lime', 'War': 'khaki', 'TV Movie': 'coral'}
 
