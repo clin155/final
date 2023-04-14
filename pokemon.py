@@ -18,13 +18,14 @@ def getpokemon(cur, st, end):
             return
         
         data = json.loads(r.text)
+        poke_type = data['types'][0]['type']['name'].capitalize()
         query = """
             INSERT INTO pokemon(id, name, height, weight, type, attack, defense, speed) VALUES 
             (?, ?, ?, ?, ?, ?, ?, ?)
         """
 
         cur.execute(query, (data['id'], data['name'], data['height'], data['weight'],
-                            data['types'][0]['type']['name'],data['stats'][1]['base_stat'],
+                            poke_type, data['stats'][1]['base_stat'],
                             data['stats'][2]['base_stat'],data['stats'][5]['base_stat']))
 
 
