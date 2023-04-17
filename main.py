@@ -35,8 +35,6 @@ def main():
 
 
 
-    # put visualization functions here
-
 
 if __name__ == "__main__":
     main()
