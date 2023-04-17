@@ -41,4 +41,5 @@ def pokemon_pie():
 
     config.closedb(conn)
 
-pokemon_pie()
+if __name__ == "__main__":
+    pokemon_pie()

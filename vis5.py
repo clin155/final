@@ -23,4 +23,5 @@ def weight_vs_energy():
     
     config.closedb(conn)
 
-weight_vs_energy()
+if __name__ == "__main__":
+    weight_vs_energy()

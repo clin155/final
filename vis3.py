@@ -31,6 +31,7 @@ def genre_rev():
     plt.xticks(rotation=45)
     plt.show()
 
-    conn.close()
+    config.closedb(conn)
 
-genre_rev()
+if __name__ == "__main__":
+    genre_rev()

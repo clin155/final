@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import config
 
-def speed_weight():
+def speed_vs_weight():
     conn = config.getdb()
     cur = conn.cursor()
 
@@ -22,4 +22,5 @@ def speed_weight():
 
     config.closedb(conn)
 
-speed_weight()
+if __name__ == "__main__":
+    speed_vs_weight()

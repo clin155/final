@@ -30,4 +30,5 @@ def pop_vs_rating():
 
     config.closedb(conn)
 
-pop_vs_rating()
+if __name__ == "__main__":
+    pop_vs_rating()
