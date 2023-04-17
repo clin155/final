@@ -11,6 +11,7 @@ def main():
     for i in range(1, 6):
         movie.moviedata(cur, i)
 
+    pokemon.get_types(cur)
     j = 1
     for i in range(4):
         pokemon.getpokemon(cur, j, j+25)
