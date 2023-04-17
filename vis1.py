@@ -22,4 +22,5 @@ def speed_weight():
 
     config.closedb(conn)
 
-speed_weight()
+if __name__ == '__main__':
+    speed_weight()

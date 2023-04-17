@@ -20,6 +20,8 @@ def main():
         dog.get_dogs(cur, 20*i)
     config.closedb(conn)
 
+    # put visualization functions here
+
 
 if __name__ == "__main__":
     main()
