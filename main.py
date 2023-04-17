@@ -34,8 +34,6 @@ def main():
 
     config.closedb(conn)
 
-    # put visualization functions here
-
 
 if __name__ == "__main__":
     main()
