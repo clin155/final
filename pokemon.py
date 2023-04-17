@@ -22,6 +22,7 @@ TYPES = {
     "Ice": 13,
     "Dragon": 14,
     "Bug": 15,
+    "Fairy": 16,
 }
 
 def getpokemon(cur, st, end):
@@ -39,7 +40,7 @@ def getpokemon(cur, st, end):
         poke_type = data['types'][0]['type']['name'].capitalize()
         type_id = TYPES[poke_type]
         query = """
-            INSERT INTO pokemon(id, name, height, weight, type, attack, defense, speed) VALUES 
+            INSERT INTO pokemon(id, name, height, weight, type_id, attack, defense, speed) VALUES 
             (?, ?, ?, ?, ?, ?, ?, ?)
         """
 
@@ -51,9 +52,8 @@ def getpokemon(cur, st, end):
 def get_types(cur):
     for type, id in TYPES.items():
         cur.execute("""
-        INSERT INTO types (id, type) VALUES (?, ?)
+        INSERT INTO type (id, type) VALUES (?, ?)
         """, (id, type))
-    cur.commit()
 
 
 if __name__ == "__main__":

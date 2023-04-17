@@ -24,14 +24,14 @@ CREATE TABLE pokemon(
     type_id VARCHAR(20),
     attack INTEGER,
     defense INTEGER,
-    speed INTEGER
+    speed INTEGER,
     FOREIGN KEY (type_id) REFERENCES type(type_id)
 );
 
 CREATE TABLE type(
     id INTEGER PRIMARY KEY,
-    type VARCHAR(20),
-)
+    type VARCHAR(20)
+);
 
 
 
