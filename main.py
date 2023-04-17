@@ -24,7 +24,9 @@ def main():
     movie.get_genres(cur)
     for i in range(5):
         dog.get_dogs(cur, 20*i)
-    
+
+    config.closedb(conn)
+
     vis1.speed_vs_weight()
     vis2.pokemon_pie()
     vis3.genre_rev()
@@ -32,7 +34,6 @@ def main():
     vis5.weight_vs_energy()
 
 
-    config.closedb(conn)
 
     # put visualization functions here
 
