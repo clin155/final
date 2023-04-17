@@ -21,11 +21,19 @@ CREATE TABLE pokemon(
     name VARCHAR(40),
     height INTEGER,
     weight INTEGER,
-    type VARCHAR(20),
+    type_id VARCHAR(20),
     attack INTEGER,
     defense INTEGER,
-    speed INTEGER
+    speed INTEGER,
+    FOREIGN KEY (type_id) REFERENCES type(type_id)
 );
+
+CREATE TABLE type(
+    id INTEGER PRIMARY KEY,
+    type VARCHAR(20)
+);
+
+
 
 CREATE TABLE dogs(
     id INTEGER PRIMARY KEY AUTOINCREMENT,
