@@ -3,11 +3,7 @@ import movie
 import config
 import pokemon
 import dog
-import vis1
-import vis2
-import vis3
-import vis4
-import vis5
+import visrunnner
 
 def main():
     conn = config.getdb()
@@ -26,6 +22,7 @@ def main():
         dog.get_dogs(cur, 20*i)
 
     config.closedb(conn)
+    visrunnner.visrunner()
 
 if __name__ == "__main__":
     main()

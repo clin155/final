@@ -19,3 +19,6 @@ pull_data -> pulls 20 entries per calls
     option (--page, -p) -> this is the page to pull:
         pokemon: default, pull pokemon (none specified)
         type: type table
+
+to run, create the databse with db.sh, then either use main to pull all data or pull_data
+run visrunner to run all visualizations
