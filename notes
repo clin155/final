@@ -11,3 +11,11 @@ to create the db:
 
 ./db.sh view will open the database and you can enter any sql commands to view or change the data
 
+pull_data -> pulls 20 entries per calls
+    argument -> DATATYPE -> this is either movie, dog, or pokemon
+    option (--table, -t) -> this is the table within the datatype:
+        movie: default movie (none specified)
+        genre: genre table
+    option (--page, -p) -> this is the page to pull:
+        pokemon: default, pull pokemon (none specified)
+        type: type table
