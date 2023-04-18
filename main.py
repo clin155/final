@@ -27,7 +27,7 @@ def main():
 
     config.closedb(conn)
 
-    vis1.pokemon_radar
+    vis1.pokemon_radar()
     vis2.pokemon_pie()
     vis3.genre_rat()
     vis4.pop_vs_rating()

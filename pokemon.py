@@ -49,6 +49,7 @@ def getpokemon(cur, st, end):
         cur.execute(query, (data['id'], data['name'], data['height'], data['weight'],
                             type_id, data['stats'][1]['base_stat'],
                             data['stats'][2]['base_stat'],data['stats'][5]['base_stat']))
+    print ("25 pokemon added")
 
 
 def get_types(cur):
@@ -56,6 +57,7 @@ def get_types(cur):
         cur.execute("""
         INSERT INTO type (id, type) VALUES (?, ?)
         """, (id, type))
+print ("types created")
 
 
 if __name__ == "__main__":

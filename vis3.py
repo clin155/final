@@ -12,10 +12,10 @@ def genre_rat():
         JOIN movies m on G.id = m.genre_id
         GROUP BY g.name
     ''')
-    results = cur.fetchall()
+    data = cur.fetchall()
 
-    genres = [entry[0] for entry in results]
-    avg_ratings = [entry[1] for entry in results]
+    genres = [entry[0] for entry in data]
+    avg_ratings = [entry[1] for entry in data]
 
     color_dict = {'Adventure': 'red', 'Fantasy': 'skyblue', 'Animation': 'green', 'Drama': 'orange', 'Horror': 'purple', 'Action': 'yellow', 'Comedy': 'pink', 'History': 'gray', 'Western': 'brown', 'Thriller': 'teal', 'Crime': 'olive', 'Documentary': 'gold', 'Science Fiction': 'magenta', 'Mystery': 'navy', 'Music': 'maroon', 'Romance': 'indigo', 'Family': 'lime', 'War': 'khaki', 'TV Movie': 'coral'}
     colors = [color_dict[genre] for genre in genres]

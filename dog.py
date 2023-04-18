@@ -26,4 +26,4 @@ def get_dogs(cur, offset):
         weight, height) VALUES (?,?,?,?,?)""", (it["name"], it["energy"], it["barking"], 
         (it["max_weight_male"] + it["max_weight_female"])/2, (it["max_height_male"] + it["max_height_female"])/2))
 
-    print("dogs added")
+    print("20 dogs added")

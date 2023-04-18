@@ -10,12 +10,7 @@ def pokemon_radar():
     conn = config.getdb()
     cur = conn.cursor()
 
-    cur.execute('''
-        SELECT t.type, AVG(p.attack) as avg_attack, AVG(p.defense) as avg_defense, AVG(p.speed) as avg_speed
-        FROM pokemon p
-        JOIN type t on p.type_id = t.id
-        GROUP BY t.type
-    ''')
+    cur.execute("SELECT weight, speed FROM pokemon")
     data = cur.fetchall()
     
     type_colors = {

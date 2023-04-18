@@ -50,7 +50,7 @@ def moviedata(cur, page):
     # for key,val in companies_dict.items():
     #     cur.execute("""INSERT INTO 
     #     companies(id, name, country) VALUES (?,?,?)""", (key,val['name'], val['country']))
-    print("movie created")
+    print("20 movies added")
 
 
 def get_genres(cur):
