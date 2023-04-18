@@ -14,9 +14,9 @@ def main():
 
     pokemon.get_types(cur)
     j = 1
-    for i in range(5):
+    for i in range(6):
         pokemon.getpokemon(cur, j, j+20)
-        j += 25
+        j += 20
     movie.get_genres(cur)
     for i in range(5):
         dog.get_dogs(cur, 20*i)
