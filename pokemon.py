@@ -57,7 +57,7 @@ def get_types(cur):
         cur.execute("""
         INSERT INTO type (id, type) VALUES (?, ?)
         """, (id, type))
-print ("types created")
+    print ("types created")
 
 
 if __name__ == "__main__":
