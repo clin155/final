@@ -12,6 +12,10 @@ import config
 @click.option('--page', '-p', default=1, type=int, help='default 1, can go up to 5')
 def main(datatype, table, page):
     '''pulls 20 entries from the database, page and table can be specified'''
+
+    if page > 5 or page < 1: 
+        print ('bad page number')
+        return
     conn = config.getdb()
     cur = conn.cursor()
 
