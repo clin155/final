@@ -2,10 +2,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import config
 
-import numpy as np
-import matplotlib.pyplot as plt
-import config
-
 def pokemon_radar():
     conn = config.getdb()
     cur = conn.cursor()

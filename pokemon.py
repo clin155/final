@@ -55,7 +55,7 @@ def getpokemon(cur, st, end):
 def get_types(cur):
     for type, id in TYPES.items():
         cur.execute("""
-        INSERT INTO type (id, type) VALUES (?, ?)
+        INSERT OR REPLACE INTO type (id, type) VALUES (?, ?)
         """, (id, type))
     print ("types created")
 

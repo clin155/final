@@ -62,7 +62,7 @@ def get_genres(cur):
     if response.status_code == 200:
         data = json.loads(response.text)
         for it in data["genres"]:
-            cur.execute("""INSERT INTO genres(id, name) VALUES (?,?)""", (it["id"], it["name"]))
+            cur.execute("""INSERT OR REPLACE INTO genres(id, name) VALUES (?,?)""", (it["id"], it["name"]))
         print("genres created")
     else:
         print("Request failed")

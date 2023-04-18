@@ -1,6 +1,6 @@
 import json
-import movie
 import config
+import movie
 import pokemon
 import dog
 import visrunnner
@@ -8,21 +8,21 @@ import visrunnner
 def main():
     conn = config.getdb()
     cur = conn.cursor()
+    
+    cur.execute("SELECT COUNT(*) FROM pokemon")
+    page_count = cur.fetchone()[0]
+    poke_page = (page_count // 20) + 1
+    movie_page = (page_count // 20) + 1
+    dog_page = (29*(page_count - 1))
 
-    for i in range(1, 6):
-        movie.moviedata(cur, i)
 
+    dog.get_dogs(cur, 29 * dog_page)
+    pokemon.getpokemon(cur, (poke_page-1)*20+1, poke_page *20+1)
     pokemon.get_types(cur)
-    j = 1
-    for i in range(6):
-        pokemon.getpokemon(cur, j, j+20)
-        j += 20
+    movie.moviedata(cur, movie_page)
     movie.get_genres(cur)
-    for i in range(5):
-        dog.get_dogs(cur, 20*i)
 
     config.closedb(conn)
-    visrunnner.visrunner()
 
 if __name__ == "__main__":
     main()
