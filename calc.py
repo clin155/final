@@ -14,13 +14,12 @@ def avg_rating_by_genre():
     ''')
     results = cur.fetchall()
 
-    with open("avg_genre_rating.txt", "w") as file:
+    with open("calc.txt", "a") as file:
+        file.write ("Average Rating of Each Genre\n\n")
         for genre, avg_rating in results:
-            file.write(f"Average rating for {genre}: {avg_rating: .2}\n")
+            file.write(f"Average rating for {genre} films: {avg_rating: .2}\n")
 
     config.closedb(conn)
-
-avg_rating_by_genre()
 
 def avg_stats_by_type():
     conn = config.getdb()
@@ -34,13 +33,12 @@ def avg_stats_by_type():
     ''')
     results = cur.fetchall()
 
-    with open("avg_poketype_stats.txt", "w") as file:
+    with open("calc.txt", "a") as file:
+        file.write("\n\nAverage Stats for Each Pokemon Type\n\n")
         for _type, avg_attack, avg_defense, avg_speed in results:
-            file.write(f"Average stats for {_type} Pokemon: Attack {avg_attack:.2f}, Defense {avg_defense:.2f}, Speed {avg_speed:.2f}\n")
+            file.write(f"Average stats for {_type} pokemon: Attack {avg_attack:.2f}, Defense {avg_defense:.2f}, Speed {avg_speed:.2f}\n")
 
     config.closedb(conn)
-
-avg_stats_by_type()
 
 def avg_weight_by_energy():
     conn = config.getdb()
@@ -53,10 +51,13 @@ def avg_weight_by_energy():
     ''')
     results = cur.fetchall()
 
-    with open ("avg_energy_weight.text", "w") as file:
+    with open ("calc.txt", "a") as file:
+        file.write("\n\nAverage Weight for Each Dog Energy Levl\n\n")
         for energy, avg_weight in results:
             file.write(f"Average weight for dogs with energy {energy}: {avg_weight:.2f}\n")
     
     config.closedb(conn)
 
+avg_rating_by_genre()
+avg_stats_by_type()
 avg_weight_by_energy()

@@ -1,0 +1,46 @@
+Average Rating of Each Genre
+
+Average rating for Action films:  6.3
+Average rating for Adventure films:  7.0
+Average rating for Animation films:  7.2
+Average rating for Comedy films:  7.5
+Average rating for Crime films:  6.1
+Average rating for Documentary films:  5.8
+Average rating for Drama films:  6.5
+Average rating for Family films:  6.8
+Average rating for Fantasy films:  6.7
+Average rating for Horror films:  6.5
+Average rating for Music films:  7.3
+Average rating for Romance films:  6.1
+Average rating for Science Fiction films:  6.8
+Average rating for Thriller films:  6.4
+Average rating for War films:  7.1
+
+
+Average Stats for Each Pokemon Type
+
+Average stats for Bug pokemon: Attack 53.00, Defense 50.50, Speed 49.50
+Average stats for Electric pokemon: Attack 54.00, Defense 62.00, Speed 83.00
+Average stats for Fairy pokemon: Attack 57.50, Defense 60.50, Speed 47.50
+Average stats for Fighting pokemon: Attack 99.00, Defense 59.00, Speed 60.00
+Average stats for Fire pokemon: Attack 75.78, Defense 60.44, Speed 84.44
+Average stats for Ghost pokemon: Attack 50.00, Defense 45.00, Speed 95.00
+Average stats for Grass pokemon: Attack 73.11, Defense 61.67, Speed 52.22
+Average stats for Ground pokemon: Attack 82.50, Defense 67.50, Speed 80.00
+Average stats for Normal pokemon: Attack 70.50, Defense 49.29, Speed 77.29
+Average stats for Poison pokemon: Attack 74.75, Defense 60.25, Speed 60.67
+Average stats for Psychic pokemon: Attack 45.20, Defense 41.00, Speed 84.80
+Average stats for Rock pokemon: Attack 85.00, Defense 126.25, Speed 42.50
+Average stats for Water pokemon: Attack 72.11, Defense 81.44, Speed 63.00
+
+
+Average Weight for Each Dog Energy Levl
+
+Average weight for dogs with energy 0: 73.75
+Average weight for dogs with energy 2: 157.50
+Average weight for dogs with energy 3: 106.33
+Average weight for dogs with energy 4: 80.20
+Average weight for dogs with energy 5: 75.91
+
+
+
