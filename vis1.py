@@ -10,7 +10,12 @@ def pokemon_radar():
     conn = config.getdb()
     cur = conn.cursor()
 
-    cur.execute("SELECT weight, speed FROM pokemon")
+    cur.execute('''
+        SELECT t.type, AVG (p.attack) as avg_attack, AVG (p.defense) as avg_defense, AVG (p.speed) as avg_speed
+        FROM pokemon p
+        JOIN type t on p.type_id = t.id
+        GROUP BY t.type
+    ''')
     data = cur.fetchall()
     
     type_colors = {
@@ -40,8 +45,8 @@ def pokemon_radar():
     for row in data:
         _type, attack, defense, speed = row
         color = type_colors[_type]
-        values = [attack, defense, speed, attack]  # Add the first value again to close the radar plot
-        ax.plot(angles + [angles[0]], values, label=_type, color=color)  # Add the first angle again to close the radar plot
+        values = [attack, defense, speed, attack]
+        ax.plot(angles + [angles[0]], values, label=_type, color=color)
 
     ax.set_theta_offset(np.pi / 2)
     ax.set_theta_direction(-1)
