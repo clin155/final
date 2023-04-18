@@ -7,22 +7,24 @@ from config import getdb, closedb
 
 
 TYPES = {
-    "Fire": 1,
-    "Grass": 2,
-    "Water": 3,
+    "Bug": 1,
+    "Dark": 2,
+    "Dragon": 3,
     "Electric": 4,
-    "Ground": 5,
-    "Rock": 6,
-    "Fighting": 7,
-    "Normal": 8,
+    "Fairy": 5,
+    "Fighting": 6,
+    "Fire": 7,
+    "Flying": 8,
     "Ghost": 9,
-    "Psychic": 10,
-    "Flying": 11,
-    "Poison": 12,
-    "Ice": 13,
-    "Dragon": 14,
-    "Bug": 15,
-    "Fairy": 16,
+    "Grass": 10,
+    "Ground": 11,
+    "Ice": 12,
+    "Normal": 13,
+    "Poison": 14,
+    "Psychic": 15,
+    "Rock": 16,
+    "Steel": 17,
+    "Water": 18,
 }
 
 def getpokemon(cur, st, end):

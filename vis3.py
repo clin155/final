@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import config
 
-def genre_rev():
+def genre_rat():
     conn = config.getdb()
     cur = conn.cursor()
 
@@ -34,4 +34,4 @@ def genre_rev():
     config.closedb(conn)
 
 if __name__ == "__main__":
-    genre_rev()
+    genre_rat()

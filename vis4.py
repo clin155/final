@@ -8,7 +8,11 @@ def pop_vs_rating():
     conn = config.getdb()
     cur = conn.cursor()
 
-    cur.execute("SELECT movies.popularity, movies.rating, genres.name FROM movies INNER JOIN genres ON movies.genre_id = genres.id")
+    cur.execute('''
+        SELECT movies.popularity, movies.rating, genres.name 
+        FROM movies
+        INNER JOIN genres
+        ON movies.genre_id = genres.id''')
     data = cur.fetchall()
     popularity, rating, genres = zip(*data)
 

@@ -27,9 +27,10 @@ def avg_stats_by_type():
     cur = conn.cursor()
 
     cur.execute('''
-        SELECT type, AVG(attack) as avg_attack, AVG(defense) as avg_defense, AVG(speed) as avg_speed
-        FROM pokemon
-        GROUP BY type
+        SELECT t.type, AVG(p.attack) as avg_attack, AVG(p.defense) as avg_defense, AVG(p.speed) as avg_speed
+        FROM pokemon p
+        JOIN type t on p.type_id = t.id
+        GROUP BY t.type
     ''')
     results = cur.fetchall()
 
@@ -41,21 +42,21 @@ def avg_stats_by_type():
 
 avg_stats_by_type()
 
-def avg_bark_by_energy():
+def avg_weight_by_energy():
     conn = config.getdb()
     cur = conn.cursor()
 
     cur.execute('''
-        SELECT energy, AVG(barking) as avg_barking
+        SELECT energy, AVG(weight) as avg_weight
         FROM dogs
         GROUP BY energy
     ''')
     results = cur.fetchall()
 
-    with open ("avg_energy_bark.text", "w") as file:
-        for energy, avg_barking in results:
-            file.write(f"Average barking level for dogs with energy {energy}: {avg_barking:.2f}\n")
+    with open ("avg_energy_weight.text", "w") as file:
+        for energy, avg_weight in results:
+            file.write(f"Average weight for dogs with energy {energy}: {avg_weight:.2f}\n")
     
     config.closedb(conn)
 
-avg_bark_by_energy()
+avg_weight_by_energy()

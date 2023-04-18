@@ -6,7 +6,12 @@ def pokemon_pie():
     conn = config.getdb()
     cur = conn.cursor()
 
-    cur.execute("SELECT type, COUNT(*) FROM pokemon GROUP BY type")
+    cur.execute('''
+        SELECT t.type, COUNT (p.id) as count
+        FROM pokemon p
+        JOIN type t on p.type_id = t.id
+        GROUP BY t.type
+    ''')
     data = cur.fetchall()
     types, counts = zip(*data)
 

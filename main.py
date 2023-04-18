@@ -27,14 +27,11 @@ def main():
 
     config.closedb(conn)
 
-    vis1.speed_vs_weight()
+    vis1.pokemon_radar
     vis2.pokemon_pie()
-    vis3.genre_rev()
+    vis3.genre_rat()
     vis4.pop_vs_rating()
     vis5.weight_vs_energy()
-
-
-
 
 if __name__ == "__main__":
     main()
