@@ -18,8 +18,8 @@ def main():
 
     pokemon.get_types(cur)
     j = 1
-    for i in range(4):
-        pokemon.getpokemon(cur, j, j+25)
+    for i in range(5):
+        pokemon.getpokemon(cur, j, j+20)
         j += 25
     movie.get_genres(cur)
     for i in range(5):

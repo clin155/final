@@ -58,6 +58,7 @@ def avg_weight_by_energy():
     
     config.closedb(conn)
 
-avg_rating_by_genre()
-avg_stats_by_type()
-avg_weight_by_energy()
+if __name__ == "__main__":
+    avg_rating_by_genre()
+    avg_stats_by_type()
+    avg_weight_by_energy()

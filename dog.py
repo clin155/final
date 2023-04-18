@@ -27,3 +27,7 @@ def get_dogs(cur, offset):
         (it["max_weight_male"] + it["max_weight_female"])/2, (it["max_height_male"] + it["max_height_female"])/2))
 
     print("20 dogs added")
+
+
+if __name__ == "__main__":
+    get_dogs()
