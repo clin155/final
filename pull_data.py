@@ -7,11 +7,15 @@ import config
 
 
 @click.command()
-@click.argument('datatype', type=str, required=True, help='movie, dog, pokemon')
+@click.argument('datatype', type=str, required=True)
 @click.option('--table', '-t', default=None, type=str, help='movie->(default movie, genre), pokemon->(default pokemon, type), dog -> no tables')
 @click.option('--page', '-p', default=1, type=int, help='default 1, can go up to 5')
 def main(datatype, table, page):
     '''pulls 20 entries from the database, page and table can be specified'''
+
+    if page > 5 or page < 1: 
+        print ('bad page number')
+        return
     conn = config.getdb()
     cur = conn.cursor()
 
