@@ -1,5 +1,4 @@
 to run, (make sure to delete database.sqlite3 before)
-run pythonmain_data.py until it prints no data to retrieve
+run main.py until it prints no data to retrieve
 
-run calc.py for calculations
-run visrunner for visualizations
+run main2.py to create and write to the text file and display visualizations

@@ -1,19 +1,18 @@
 Average Rating of Each Genre
 
 Average rating for Action films:  6.3
-Average rating for Adventure films:  7.0
-Average rating for Animation films:  7.2
-Average rating for Comedy films:  7.5
-Average rating for Crime films:  6.1
+Average rating for Adventure films:  6.4
+Average rating for Animation films:  7.3
+Average rating for Comedy films:  6.7
+Average rating for Crime films:  5.9
 Average rating for Documentary films:  5.8
-Average rating for Drama films:  6.5
-Average rating for Family films:  6.8
-Average rating for Fantasy films:  6.7
+Average rating for Drama films:  6.3
+Average rating for Family films:  7.0
+Average rating for Fantasy films:  6.9
 Average rating for Horror films:  6.5
-Average rating for Music films:  7.3
-Average rating for Romance films:  6.1
-Average rating for Science Fiction films:  6.8
-Average rating for Thriller films:  6.4
+Average rating for Music films:  7.2
+Average rating for Science Fiction films:  7.0
+Average rating for Thriller films:  6.6
 Average rating for War films:  7.1
 
 
@@ -41,6 +40,3 @@ Average weight for dogs with energy 2: 157.50
 Average weight for dogs with energy 3: 106.33
 Average weight for dogs with energy 4: 80.20
 Average weight for dogs with energy 5: 75.91
-
-
-
