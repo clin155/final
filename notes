@@ -1,24 +1,5 @@
-run the db.sh file,
+to run, (make sure to delete database.sqlite3 before)
+run pythonmain_data.py until it prints no data to retrieve
 
-you only need to do this once:
-chmod +x db.sh
-
-to create the db:
-
-./db.sh create
-
-(replace create with destroy,view,etc)
-
-./db.sh view will open the database and you can enter any sql commands to view or change the data
-
-pull_data -> pulls 20 entries per calls
-    argument -> DATATYPE -> this is either movie, dog, or pokemon
-    option (--table, -t) -> this is the table within the datatype:
-        movie: default movie (none specified)
-        genre: genre table
-    option (--page, -p) -> this is the page to pull:
-        pokemon: default, pull pokemon (none specified)
-        type: type table
-
-to run, create the databse with db.sh, then either use main to pull all data or pull_data
-run visrunner to run all visualizations
+run calc.py for calculations
+run visrunner for visualizations
