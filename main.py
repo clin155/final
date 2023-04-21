@@ -13,7 +13,7 @@ def main():
     page_count = cur.fetchone()[0]
     poke_page = (page_count // 20) + 1
     movie_page = (page_count // 20) + 1
-    dog_page = (29*(page_count - 1))
+    dog_page = (page_count // 20) * 29
 
 
     dog.get_dogs(cur, 29 * dog_page)
