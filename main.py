@@ -3,7 +3,6 @@ import config
 import movie
 import pokemon
 import dog
-import visrunnner
 
 def main():
     conn = config.getdb()
@@ -55,6 +54,6 @@ def helper(cur):
         movie.get_genres(cur)
         return
 
-    print("No data to retrieve")
+    print("No data left to retrieve")
 if __name__ == "__main__":
     main()

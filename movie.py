@@ -67,4 +67,3 @@ def get_genres(cur):
     else:
         print("Request failed")
         return
-
